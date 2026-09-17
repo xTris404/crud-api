@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD API + AJAX Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/">Spring Boot CRUD API + AJAX</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="/categories">Categories</a>
+            <a class="nav-link" href="/products">Products</a>
+            <a class="nav-link" href="/swagger-ui.html" target="_blank">Swagger UI</a>
+            <a class="nav-link" href="/h2-console" target="_blank">H2 Console</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3><i class="fas fa-tags text-primary"></i> Category Management</h3>
+                    <p class="text-muted">CRUD Category với RESTful API + AJAX</p>
+                    <a href="/categories" class="btn btn-primary">Quản lý Category</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3><i class="fas fa-box text-success"></i> Product Management</h3>
+                    <p class="text-muted">CRUD Product với RESTful API + AJAX</p>
+                    <a href="/products" class="btn btn-success">Quản lý Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h4>API Endpoints</h4>
+        <ul>
+            <li><code>GET /api/category</code> - Lấy tất cả Category</li>
+            <li><code>POST /api/category/addCategory</code> - Thêm Category</li>
+            <li><code>PUT /api/category/updateCategory</code> - Cập nhật Category</li>
+            <li><code>DELETE /api/category/deleteCategory?categoryId=</code> - Xóa Category</li>
+            <li><code>GET /api/product</code> - Lấy tất cả Product</li>
+            <li><code>POST /api/product/addProduct</code> - Thêm Product</li>
+            <li><code>PUT /api/product/updateProduct</code> - Cập nhật Product</li>
+            <li><code>DELETE /api/product/deleteProduct?productId=</code> - Xóa Product</li>
+        </ul>
+        <p>Swagger UI: <a href="/swagger-ui.html" target="_blank">http://localhost:8080/swagger-ui.html</a></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
